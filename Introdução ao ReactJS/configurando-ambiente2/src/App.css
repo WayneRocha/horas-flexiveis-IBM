@@ -1,0 +1,17 @@
+.mao {
+    font-size: 3em;
+    animation: acenar 2s infinite ease-in-out;
+    transform-origin:5% bottom;
+}
+
+@keyframes acenar {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
