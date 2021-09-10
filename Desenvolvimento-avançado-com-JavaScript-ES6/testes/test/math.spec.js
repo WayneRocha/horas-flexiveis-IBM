@@ -1,7 +1,8 @@
 const assert = require('assert');
 const Math = require('../src/math.js');
+const expect = require('chai').expect;
 
-describe('comportamentos esperados', function(){
+describe('Math class', function(){
 	beforeEach(function() {
         //o que fazer após cada teste        
     });
@@ -23,6 +24,9 @@ describe('comportamentos esperados', function(){
         const resultadoEsperado = 5 * 2;
 
         assert.equal(operacao(), resultadoEsperado);
+
+
+        expect(operacao()).to.equal(10)
     });
 
     it.skip('dividir dois números', function() {
